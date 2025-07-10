@@ -1,9 +1,6 @@
 import api from "@/utils/api";
-import { resetPasswordDTO } from "@/utils/schemas/AuthTypes";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
-import { useState } from "react";
-import { toast } from "sonner";
+
 
 export const useForgotPassword = () => {
   return useMutation({

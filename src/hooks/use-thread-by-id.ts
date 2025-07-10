@@ -1,5 +1,4 @@
 import { PostWithRelativeTime } from "@/types/profile";
-import { ThreadProps } from "@/types/thread";
 import api from "@/utils/api";
 import { useQuery } from "@tanstack/react-query";
 
