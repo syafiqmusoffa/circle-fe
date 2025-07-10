@@ -1,0 +1,73 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: 50%;
+  gap: 10px;
+  align-items: center;
+  margin: 100px auto;
+  /* background-color: salmon; */
+  padding: 30px;
+}
+
+
+.title-form {
+  /* text-align: center; */
+  color: #99bc85;
+}
+.title-order {
+  color: #19854f;
+}
+
+.form-button-order {
+  align-self: center;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ask-acc {
+  color: #19854f;
+  align-self: flex-end;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+.right-bar-card {
+  background-color: #99bc85;
+}
+.right-bar-button {
+  background-color: #e4efe7;
+}
+
+/* .icon-kiri {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+} */
+
+.img-post {
+  justify-self: center;
+  width: 50%;
+}
+
+.create-dialog {
+  background-color: #99bc85;
+}
+.create-dialog:hover {
+  background-color: #98ad8d;
+}
+
+.button-rightside {
+  background-color: #2a2b2a;
+}
