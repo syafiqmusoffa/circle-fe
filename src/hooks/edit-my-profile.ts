@@ -102,7 +102,9 @@ export function useEditProfile() {
     }
   };
   
-  const clearImage = () => {
+  const clearImage = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     setAvatarPreview(null);
     setAvatarFile(null);
     setAvatarDeleted(true);
@@ -110,7 +112,9 @@ export function useEditProfile() {
     toast.info("Foto profil akan dihapus setelah disimpan.");
   };
 
-  const clearImageBanner = () => {
+  const clearImageBanner = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
     setBannerPreview(null);
     setBannerFile(null);
     setBannerDeleted(true);

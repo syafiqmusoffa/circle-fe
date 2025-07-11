@@ -15,7 +15,7 @@ export const useDeleteThread = () => {
       toast.success(data.message || "berhasil dihapus");
       queryClient.invalidateQueries({ queryKey: ["thread"] });
       queryClient.removeQueries({ queryKey: ["threadById"] });
-
+      queryClient.invalidateQueries({ queryKey: ["profile"] });
     },
     onError: (error: any) => {
       toast.error(error.response.data.message || "error delete");

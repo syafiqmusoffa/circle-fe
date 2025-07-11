@@ -50,6 +50,7 @@ export function useEditThread(id: any) {
     onSuccess: (data: any) => {
       toast.success(data.message);
       setImageDeleted(false);
+      
       queryClient.invalidateQueries({ queryKey: ["threadById"] });
       queryClient.invalidateQueries({ queryKey: ["thread"] });
       queryClient.invalidateQueries({ queryKey: ["profile"] });
