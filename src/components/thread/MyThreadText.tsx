@@ -39,7 +39,7 @@ export const MyThreadList = ({ thread }: Props) => {
                 )}
                 <div>
                   <div className="flex items-center pb-2">
-                    <p className="text-gray-400 text-sm mr-3">
+                    <p className="text-white text-sm mr-3">
                       {thread.author.profile.name}
                     </p>
                     <p className="text-gray-600 text-sm">

@@ -53,15 +53,15 @@ function Thread({ thread }: Props) {
             </Avatar>
           </NavLink>
           <div>
-            <div className="flex items-center">
+            <div className="flex items-center pb-2">
               <NavLink
                 to={`/profile/${thread.author?.profile?.username}`}
                 className="cursor-pointer flex"
               >
-                <p className="text-white text-sm mr-3 break-all whitespace-normal font-semibold">
+                <p className="text-white text-sm mr-3 ">
                   {thread.author.profile.name}
                 </p>
-                <p className="text-gray-600 text-sm flex w-60 items-center">
+                <p className="text-gray-600 text-sm">
                   @{thread.author.profile.username}
                 </p>
               </NavLink>
@@ -69,13 +69,15 @@ function Thread({ thread }: Props) {
             <p className="text-white text-sm mr-3 break-all whitespace-normal ">
               {thread.content}
             </p>
-            <NavLink to={`/thread/${thread.id}`} className="cursor-pointer">
-              <img
-                className="w-100 h-80 rounded-2xl object-cover my-2 block lg:hidden"
-                src={thread.imageUrl}
-                alt={thread.author.profile.username}
-              />
-            </NavLink>
+            {thread.imageUrl && (
+              <NavLink to={`/thread/${thread.id}`} className="cursor-pointer">
+                <img
+                  className="w-100 h-80 rounded-2xl object-cover my-2 block lg:hidden"
+                  src={thread.imageUrl}
+                  alt={thread.author.profile.username}
+                />
+              </NavLink>
+            )}
             <Dialog>
               <DialogTrigger asChild className=" hidden lg:block">
                 {thread.imageUrl && (
