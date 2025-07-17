@@ -1,4 +1,3 @@
-// utils/fetch-user.ts
 import api from "@/utils/api";
 import { SuggestedUserType } from "@/types/suggested-profile";
 

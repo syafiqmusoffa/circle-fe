@@ -17,8 +17,8 @@ function CreateContent() {
     preview,handleSubmit, clearImage
   } = useCreate();
 
-  if (isLoading) return <div>Loading...</div>;
-  if (isError || !profile) return <div>Gagal mengambil profil</div>;
+  if (isLoading) return <div className="text-gray-400">Loading...</div>;
+  if (isError || !profile) return <div className="text-red-500">Gagal mengambil profil</div>;
 
   return (
     <form onSubmit={handleSubmit}>

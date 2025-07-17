@@ -6,8 +6,8 @@ function OtherProfileThread() {
     const {username}=useParams()
   const { data: thread, isLoading, isError } = fetchOtherThread(username);
 
-  if (isLoading) return <div>Loading...</div>;
-  if (isError || !thread) return <div>Gagal mengambil profil</div>;
+  if (isLoading) return <div className="text-gray-400">Loading...</div>;
+  if (isError || !thread) return <div className="text-red-500">Gagal mengambil profil</div>;
  
 
   return (

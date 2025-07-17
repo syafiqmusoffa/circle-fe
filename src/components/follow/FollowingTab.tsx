@@ -4,7 +4,7 @@ import FollowCard from "./FollowCard";
 export default function FollowingTab() {
   const { data: users, isLoading } = useGetFollowing();
 
-  if (isLoading) return <div>Loading following...</div>;
+  if (isLoading) return <div className="text-gray-400">Loading following...</div>;
 
   return (
     <div className="space-y-3">

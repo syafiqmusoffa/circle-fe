@@ -27,7 +27,7 @@ function DetailThread() {
       <ThreadCommentBox />
 
       {isLoading ? (
-        <p className="text-center text-gray-500 mt-4">Loading comments...</p>
+        <p className="text-center text-gray-400 mt-4">Loading comments...</p>
       ) : isError ? (
         <p className="text-center text-red-500 mt-4">
           Failed to load comments.
@@ -35,9 +35,7 @@ function DetailThread() {
       ) : (
         <Replies replies={replies} />
       )}
-      <div className="py-10 ">
-
-      </div>
+      <div className="py-10 "></div>
     </div>
   );
 }

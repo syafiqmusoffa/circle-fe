@@ -5,8 +5,8 @@ import { useThreads } from "@/hooks/use-thread-list";
 function Home() {
   const { data: threads, isLoading, error } = useThreads();
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading threads</p>;
+  if (isLoading) return <p className="text-gray-400">Loading...</p>;
+  if (error) return <p className="text-red-500">Error loading threads</p>;
   return (
     <main className="pt-3 ">
       <h1 className="p-3 text-4xl text-gray-400">Home</h1>

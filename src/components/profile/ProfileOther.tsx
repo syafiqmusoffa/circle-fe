@@ -34,7 +34,7 @@ export function ProfileCompOther() {
     }
   };
 
-  if (isLoading) return <p className="p-3 text-white">Loading...</p>;
+  if (isLoading) return <p className="p-3 text-gray-400">Loading...</p>;
   if (isError && error instanceof AxiosError) {
     if (error.response?.status === 400) {
       return <Navigate to="/profile" />;

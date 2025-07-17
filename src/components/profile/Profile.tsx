@@ -10,8 +10,8 @@ function ProfileComp() {
   const { data: profile, isLoading, isError } = useProfile();
   const location = useLocation();
   const isNotProfilePage = ["/profile"].includes(location.pathname);
-  if (isLoading) return <div>Loading...</div>;
-  if (isError || !profile) return <div>Gagal mengambil profil</div>;
+  if (isLoading) return <div className="text-gray-400">Loading...</div>;
+  if (isError || !profile) return <div className="text-red-500">Gagal mengambil profil</div>;
   const { logout } = useAuth();
   function onLogout() {
     logout();

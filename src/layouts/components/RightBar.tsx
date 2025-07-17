@@ -1,4 +1,3 @@
-// RightBar.tsx
 import { useLocation } from "react-router-dom";
 import ProfileComp from "@/components/profile/Profile";
 import { FaGithub } from "react-icons/fa";

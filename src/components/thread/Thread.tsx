@@ -71,7 +71,7 @@ function Thread({ thread }: Props) {
             </p>
             <NavLink to={`/thread/${thread.id}`} className="cursor-pointer">
               <img
-                className="w-100 h-80 rounded-2xl object-cover my-2 cursor-pointer block lg:hidden"
+                className="w-100 h-80 rounded-2xl object-cover my-2 block lg:hidden"
                 src={thread.imageUrl}
                 alt={thread.author.profile.username}
               />
@@ -80,7 +80,7 @@ function Thread({ thread }: Props) {
               <DialogTrigger asChild className=" hidden lg:block">
                 {thread.imageUrl && (
                   <img
-                    className="w-100 h-80 m-auto object-cover rounded-2xl my-2 cursor-pointer"
+                    className="w-100 h-80 object-cover rounded-2xl my-2 cursor-pointer"
                     src={thread.imageUrl}
                     alt={thread.author.profile.username}
                   />

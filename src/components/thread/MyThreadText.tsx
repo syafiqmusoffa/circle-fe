@@ -1,15 +1,12 @@
-import {  PostWithRelativeTime } from "@/types/profile";
+import { PostWithRelativeTime } from "@/types/profile";
 import Like from "./Like";
 import { NavLink } from "react-router-dom";
 import Comment from "../comments/CommentIcon";
-import { DropdownThreads } from "../dropdown/DropDownMenu";
 import { formatTime } from "@/utils/formatTime";
 
 type Props = {
   thread: PostWithRelativeTime[];
 };
-
-
 
 export const MyThreadList = ({ thread }: Props) => {
   if (thread.length === 0) {
@@ -71,11 +68,13 @@ export const MyThreadList = ({ thread }: Props) => {
                     >
                       <Comment count={thread.countComment} />
                     </NavLink>
-                    <p className="text-gray-500">{formatTime(thread.createdAt)}</p>
+                    <p className="text-gray-500">
+                      {formatTime(thread.createdAt)}
+                    </p>
                   </div>
                 </div>
               </section>
-              <DropdownThreads thread={thread} />
+        
             </div>
           </div>
         );
