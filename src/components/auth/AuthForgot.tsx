@@ -32,7 +32,7 @@ function AuthForgot() {
               required
             />
             <Button
-              className="form-button-order bg-green-800"
+              className="form-button-order bg-green-800 hover:bg-green-500 text-white cursor-pointer"
               type="submit"
               disabled={isPending}
             >

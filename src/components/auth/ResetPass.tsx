@@ -79,7 +79,7 @@ function ResetPass() {
               </Button>
             </div>
             <Button
-              className="form-button-order bg-green-800 cursor-pointer text-white"
+              className="form-button-order bg-green-800 hover:bg-green-500 text-white cursor-pointer"
               type="submit"
               disabled={isPending}
             >
